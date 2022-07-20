@@ -1,0 +1,264 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../../asset/logo/vector/isolated-monochrome-white.svg">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-127HHJ286E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-127HHJ286E');
+    </script>
+    <title>python lists</title>
+</head>
+
+<body>
+    <!-- offscreen -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="intro.html">Python</a>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div id="main">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-logo"><img src="../../asset/logo/vector/isolated-layout.svg"
+                    width="100px"></a>
+            <a href="#" class="nav-link" onclick="openNav()">Tutorials</a>
+            <a href="#" class="nav-link">Examples</a>
+        </nav>
+
+        <div class="main2">
+            <div class="lessons">
+                <ul class="ul">
+                    <h4 class="head">Python basic</h4>
+                    <hr>
+                    <li><a class="learn" href="intro.html">Python Intro</a></li>
+                    <li><a class="learn" href="comment.html">Python Comments</a></li>
+                    <li><a class="learn active" href="variable.html">Python variables</a></li>
+                    <li><a class="learn" href="data-type.html">Python Data Types</a></li>
+                    <li><a class="learn" href="inOut.html">Python I/O</a></li>
+                    <li><a class="learn" href="operators.html">Operators</a></li>
+                    <li><a class="learn" href="conversion.html">type conversion</a></li>
+                </ul>
+            </div>
+
+            <div class="parts">
+                <h1 class="head">Python Lists</h1>
+                <p class="text">In this article you will learn what's a List</p>
+                <hr>
+                <p class="main-text">
+                <section class="what">
+                    <h1 class="head">What's a List?</h1>
+                    <p class="text">
+                        A List can be taken as a box in which you have a thing for example a photo of a house <br>
+                        or an old item or anthing
+                    </p>
+                </section>
+                <hr>
+                <section class="how">
+                    <h1 class="head">How to create a List</h1>
+                    <p class="text">
+                      A group of elements is called a list in python.
+                      Python lists are very similar to an array but the main difference is, an array can store only one type of element whereas, a list can store different types of elements.
+                      List are mutable (changeable).<br>
+                      Lists are dynamics which means size is not fixed. Lists are represented using a square bracket[ ], separated by commas.
+
+                        We initialise a list with square brackets, and create it the same way we create  variable.
+                        Give the list a name, followed by an equal sign and square brackets. Add elements in the list separated by commmas separated by commas
+
+                    </p>
+                    <div class="code">
+                        <font class="comment"># This is a List called "animalss" containing a list of animalss.</font><br>
+                        <font class="s">animals</font> <font class="num">#gives ["moose", "dog", "cat", "turtle"]</font> <br>
+                    </div>
+                    <p class="text">
+                        Here we have declared a List called <font class="unique">animalss</font>
+                        <br>
+                        We can add another animals to the list by using the append() function.
+                        Suppose we want to add a donkey to the end of list.
+                        For that, we would simply write: <br>
+
+                    </p>
+                    <div class="code">
+                        <font class="s">animals.append("donkey")</font>
+                        <font class="s">animals</font>  <font class="num">#gives ["moose", "dog", "cat", "turtle", "donkey"]<br>
+                    </div>
+                    <p class="text">
+                        animals now contains the donkey!
+                    </p>
+
+
+
+                    <p class="text">To remove items off of a list, use the remove() function</p>
+                    <div class="code">
+                      <font class="s">animalss.remove("cat")</font>
+                      <font class="s">animalss</font> = <font class="num">["moose", "dog", "turtle", "donkey"]<br>
+                  </div>
+                  <p class="text">
+                      animals now doesn't contain the cat!
+                  </p>
+                </section>
+                <hr>
+                <section class="how">
+                  <h1 class="head">How to access items in a List</h1>
+
+                  <p class="text"> We can access items in a list using their index. Python lists indexes start at 0, so the first element of the list.<br>
+                    will be located at position 0. To access an element of the list via index, write the name of the list followed by square brackets, and in these brackets write the index position.
+                  In our case, with the animals list, to access the elements by index we would write:
+                  </p>
+                <div class="code">
+               <font class="s">animals</font>  <font class="num">["moose", "dog", "cat", "turtle"]</font> <br>
+               <font class="s">animals[0]</font>  <font class="num"> #gives "moose"</font> <br>
+               <font class="s">animals[1]</font>  <font class="num"> #gives "dog"</font> <br>
+               <font class="s">animals[2]</font>  <font class="num"> #gives "cat"</font> <br>
+               <font class="s">animals[3]</font>  <font class="num">#gives turtle"</font> <br>
+              </div>
+              <p class="text">Yoo can access the elements of the list by using negative numbers. So animas[-1] would give you the last element of the list,
+                animalss[-2] the next to last element and so on:
+              </p>
+              <div class="code">
+                <font class="s">animals</font>  <font class="num">["moose", "dog", "cat", "turtle"]</font> <br>
+                <font class="s">animals[-4]</font>  <font class="num"> #gives "moose"</font> <br>
+                <font class="s">animals[-3]</font>  <font class="num"> #gives "dog"</font> <br>
+                <font class="s">animals[-2]</font>  <font class="num"> #gives "cat"</font> <br>
+                <font class="s">animals[-1]</font>  <font class="num">#gives turtle"</font> <br>
+               </div>
+                <hr>
+              </section>
+
+              <section class="how">
+                <h1 class="head">How to replace items in a List</h1>
+                <p class="text">
+                Finally, you can use indexes to replace items in a list.
+                Suppose I wanted to replace "dog" with parrot, in my animals list.
+                Dog is the 2nd element of the list, so is at index animalss[1]. (Rememember that indexes start at 0).
+                To replace "dog" with parrot I would simplty write:</p>
+                <div class="code">
+                  <font class="s">animals[1]</font> = <font class="num">"parrot</font> <br>
+                <br>
+                 </div>
+                 <p> And printing out the list would yield:</p>
+                 <div class="code">
+                  <font class="s">print(animals)</font> #yields <font class="num">["moose", "parrot", "cat", "turtle"]</font> <br>
+                <br>
+                 </div>
+                 <p class="text"> so we have successfully replaced the dog with the parrot in our list!.</p>
+
+              </section>
+                <section class="Assigning">
+                    <h1 class="head">case-sensitive</h1>
+                    <p class="text">
+                        Remember that Python is case sensitive so <font class="unique">Apple</font>
+                        is NOT the same as <font class="unique">apple.</font></p>
+
+
+                </section>
+                <hr>
+
+                <section class="naming">
+                    <h1 class="head">How to name a List</h1>
+                    <p class="text">
+                        do and don't to name a List in python are the same as the dos and donts to name variables in python
+                    <ul>
+                        <li>List name must not start with a number(1name, 23name)</li>
+                        <li>List name must start with latters or underscore(name, _name)</li>
+                        <li>List name can contain number but after a latter(name1, n1ame)</li>
+                        <li>List name must not have space in between(my age)</li>
+                    </ul>
+                    </p>
+
+                </section>
+                <hr>
+
+                <section class="mulit-word">
+                    <h1 class="head">multi-word naming</h1>
+                    <p class="text">
+                        To make it clear to read a List and other variables name, it is best that programmers follow the <a href="https://peps.python.org/pep-0008">PEP 8 naming convention</a>.
+                      <br>
+                      This convention specifies the best naming practices programmers must follow when writing python code.
+
+                </p>
+
+
+                </section>
+                <hr>
+
+                <button class="btn">
+                    <a href="#" class="next">Next: Where next?</a>
+                </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="foot">
+        <section class="foot-main">
+            <div class="detail">
+                <h1 class="head">Ezpie</h1>
+                <p><strong>Email</strong>: ezpie.co@gmail.com</p>
+            </div>
+            <div class="tutorials">
+                <h3 class="course">Tutorials</h3>
+                <ul class="links">
+                    <li><a href="intro.html" class="list-item">Python</a></li>
+                    <li><a href="#" class="list-item">Javascript</a></li>
+                    <li><a href="#" class="list-item">HTML</a></li>
+                    <li><a href="#" class="list-item">CSS</a></li>
+                </ul>
+            </div>
+            <div class="challenges">
+                <h3 class="course">Challenges</h3>
+                <!-- TODO add example links -->
+                <ul class="links">
+                    <li><a href="#" class="list-item">Python Challenges</a></li>
+                    <li><a href="#" class="list-item">Javascript Challenges</a></li>
+                    <li><a href="#" class="list-item">HTML Challenges</a></li>
+                    <li><a href="#" class="list-item">CSS Challenges</a></li>
+                </ul>
+            </div>
+
+            <div class="Company">
+                <h3 class="course">Company</h3>
+                <ul class="links">
+                    <!-- TODO add links -->
+                    <li><a href="../../company/about.html" class="list-item">About</a></li>
+                    <li><a href="../../company/privacy.html" class="list-item">Privacy Policy</a></li>
+                    <li><a href="../../company/terms.html" class="list-item">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="info">
+            <p class="copyright">Copyright (c) 2022 Ezpie</p>
+            <div class="net">
+                <a href="https://github.com/ishaan010">
+                    <img class="net-icon" src="../../asset/logo/internet/GitHub-Mark-Light-32px.png"
+                        alt="my github page for ezpie" width="30px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100082135591250">
+                    <img class="net-icon" src="../../asset/logo/internet/facebook.svg" alt="my facebook page for ezpie"
+                        width="30px">
+                </a>
+                <a href="https://twitter.com/EzpieCo">
+                    <img src="../../asset/logo/internet/twitter.svg" alt="my twitter page for ezpie" width="30px"
+                        class="net-icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../js/nav.js"></script>
+
+</body>
+
+</html>
